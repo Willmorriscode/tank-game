@@ -1,7 +1,7 @@
 using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerNetwork : NetworkBehaviour
+public class PlayerInputAndMovement : NetworkBehaviour
 {
     // useful for later
     /*
@@ -21,6 +21,35 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if (!IsOwner) return; // only run code to move gameobject when you own the object
 
+        PlayerMovement();
+        PlayerTankControls();
+    }
+
+    private void PlayerTankControls()
+    {
+        if (Input.GetKey(KeyCode.Keypad1))
+        {
+            // call server rpc to enter seat 1 here
+        }
+
+        if (Input.GetKey(KeyCode.Keypad2))
+        {
+            // call server rpc to enter seat 2 here
+        }
+
+        if (Input.GetKey(KeyCode.Keypad3))
+        {
+            // call server rpc to enter seat 3 here
+        }
+
+        if (Input.GetKey(KeyCode.Keypad4))
+        {
+            // call server rpc to enter seat 3 here
+        }
+    }
+
+    private void PlayerMovement()
+    {
         // basic movement control for wsad controls
         Vector3 m_moveDir = new(0, 0, 0);
 

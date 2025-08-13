@@ -437,6 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3719002336876939572}
+  - component: {fileID: 6153214602337705302}
   m_Layer: 0
   m_Name: TankSeatManager
   m_TagString: Untagged
@@ -463,6 +464,23 @@ Transform:
   - {fileID: 324504690709150392}
   m_Father: {fileID: 6651926768196963370}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6153214602337705302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5887750661261089958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e90205ddd7a81e41be595f9884f60e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_seat1: {fileID: 3279953490231938112}
+  m_seat2: {fileID: 8865142423344863261}
+  m_seat3: {fileID: 3799941220111769287}
+  m_seat4: {fileID: 324504690709150392}
 --- !u!1 &7616972840463876177
 GameObject:
   m_ObjectHideFlags: 0

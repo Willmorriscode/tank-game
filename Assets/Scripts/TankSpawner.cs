@@ -1,7 +1,7 @@
 using Unity.Netcode;
 using UnityEngine;
 
-public class TankNetworkManager : NetworkBehaviour
+public class TankSpawner : NetworkBehaviour
 {
 
     // this file should really be on the tank itself but for testing purposes we will put it on the character
